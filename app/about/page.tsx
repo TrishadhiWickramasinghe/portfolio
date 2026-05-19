@@ -54,9 +54,10 @@ export default function About() {
   ];
 
   const alResults = [
-    { subject: 'Information Technology', grade: 'A', marks: '86/100' },
-    { subject: 'Physics', grade: 'A', marks: '85/100' },
-    { subject: 'English Language', grade: 'B+', marks: '78/100' },
+    { subject: 'Combined Maths', grade: 'C', marks: '60/100' },
+    { subject: 'Physics', grade: 'S', marks: '55/100' },
+    { subject: 'Chemistry', grade: 'S', marks: '55/100' },
+    { subject: 'General English', grade: 'S', marks: '55/100' },
   ];
 
   const olResults = [
