@@ -1,115 +1,38 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { ProjectCard } from '@/components';
+import { ProjectCard, SectionTitle } from '@/components';
 
 export default function Projects() {
   const allProjects = [
     {
-      title: 'Full Stack E-commerce Platform',
+      title: 'BTY-HUB – E-Commerce Platform',
       description:
-        'Comprehensive e-commerce solution with product catalog, shopping cart, payment processing via Stripe, user authentication, and admin dashboard for inventory management.',
-      technologies: [
-        'Next.js',
-        'TypeScript',
-        'Stripe API',
-        'PostgreSQL',
-        'Tailwind CSS',
-      ],
+        'Developed a full-stack e-commerce platform with a React frontend and FastAPI backend. Implemented JWT authentication, product management, shopping cart, order management, wishlist, reviews, ratings, and an admin analytics dashboard.',
+      technologies: ['FastAPI', 'React JS', 'MongoDB', 'JWT', 'Motor', 'Pydantic'],
       githubUrl: 'https://github.com',
       liveUrl: 'https://example.com',
       image: '🛒',
     },
     {
-      title: 'Collaborative Task Management App',
+      title: 'SubTrack – Subscription Management App',
       description:
-        'Real-time task management platform enabling team collaboration with drag-and-drop functionality, priority levels, deadlines, notifications, and progress tracking.',
-      technologies: ['React', 'Firebase', 'Redux', 'Tailwind CSS', 'Socket.io'],
+        'Built a cross-platform mobile application for tracking subscriptions, budgeting, and financial analytics with smart reminders and real-time synchronization.',
+      technologies: ['React Native', 'Expo', 'TypeScript', 'Supabase'],
       githubUrl: 'https://github.com',
       liveUrl: 'https://example.com',
-      image: '✅',
+      image: '📱',
+      badge: 'Ongoing Project',
     },
     {
-      title: 'Real-time Chat Application',
+      title: 'Remnantborn – Realm Clash RPG Companion App',
       description:
-        'Feature-rich messaging platform with user profiles, one-on-one and group chats, message encryption, typing indicators, online status, and media sharing capabilities.',
-      technologies: [
-        'Node.js',
-        'Express',
-        'Socket.io',
-        'MongoDB',
-        'React',
-      ],
+        'Contributing to a sci-fi RPG companion app with character management, squad systems, duels, inventory management, and real-time multiplayer features.',
+      technologies: ['Flutter', 'Dart', 'Supabase', 'Node.js', 'Socket.IO', 'Cloudinary'],
       githubUrl: 'https://github.com',
       liveUrl: 'https://example.com',
-      image: '💬',
-    },
-    {
-      title: 'Personal Portfolio Website',
-      description:
-        'Modern, responsive portfolio showcasing projects and skills with smooth animations, dark/light mode toggle, contact form, and SEO optimization.',
-      technologies: [
-        'Next.js',
-        'TypeScript',
-        'Tailwind CSS',
-        'Framer Motion',
-      ],
-      githubUrl: 'https://github.com',
-      liveUrl: 'https://example.com',
-      image: '🌐',
-    },
-    {
-      title: 'Weather Forecast Application',
-      description:
-        'Real-time weather application with location search, 5-day forecasts, interactive maps, weather alerts, and historical data visualization.',
-      technologies: ['React', 'Weather API', 'Chart.js', 'Tailwind CSS'],
-      githubUrl: 'https://github.com',
-      liveUrl: 'https://example.com',
-      image: '🌤️',
-    },
-    {
-      title: 'Movie Recommendation Engine',
-      description:
-        'Smart movie recommendation system using machine learning algorithms, user preferences, and collaborative filtering to suggest personalized content.',
-      technologies: [
-        'Python',
-        'Machine Learning',
-        'React',
-        'FastAPI',
-        'PostgreSQL',
-      ],
-      githubUrl: 'https://github.com',
-      liveUrl: 'https://example.com',
-      image: '🎬',
-    },
-    {
-      title: 'Code Snippet Manager',
-      description:
-        'Developer tool for saving, organizing, and sharing code snippets with syntax highlighting, tagging, search functionality, and dark mode support.',
-      technologies: [
-        'Next.js',
-        'MongoDB',
-        'TypeScript',
-        'Highlight.js',
-      ],
-      githubUrl: 'https://github.com',
-      liveUrl: 'https://example.com',
-      image: '💾',
-    },
-    {
-      title: 'Fitness Tracking Dashboard',
-      description:
-        'Comprehensive fitness application with workout logging, progress tracking, goal setting, nutrition tracking, and detailed analytics with charts.',
-      technologies: [
-        'React',
-        'Node.js',
-        'MongoDB',
-        'Chart.js',
-        'Tailwind CSS',
-      ],
-      githubUrl: 'https://github.com',
-      liveUrl: 'https://example.com',
-      image: '💪',
+      image: '🎮',
+      badge: 'Ongoing Project',
     },
   ];
 
@@ -144,23 +67,24 @@ export default function Projects() {
             className="text-center"
           >
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6">
-              My Projects
+              My <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Projects</span>
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-              A collection of full-stack applications showcasing my expertise in modern web
-              development, problem-solving, and user-centric design.
+              A collection of full-stack applications and mobile apps showcasing my expertise in modern development, problem-solving, and innovative design.
             </p>
           </motion.div>
         </div>
       </section>
 
-      {/* Projects Grid */}
+      {/* Featured Projects */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
+          <SectionTitle title="Featured Projects" accent="Projects" />
           <motion.div
             variants={containerVariants}
             initial="hidden"
             whileInView="visible"
+            viewport={{ once: true }}
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
           >
             {allProjects.map((project) => (
@@ -168,6 +92,94 @@ export default function Projects() {
                 <ProjectCard {...project} />
               </motion.div>
             ))}
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Project Details Section */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-900">
+        <div className="max-w-6xl mx-auto">
+          <SectionTitle title="Project Highlights" accent="Highlights" />
+          
+          {/* BTY-HUB Details */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="mb-16 bg-white dark:bg-gray-800 rounded-xl p-8 border border-gray-200 dark:border-gray-700"
+          >
+            <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">BTY-HUB Features</h3>
+            <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-700 dark:text-gray-300">
+              {[
+                'JWT Authentication',
+                'Product CRUD Operations',
+                'Shopping Cart Management',
+                'Wishlist Functionality',
+                'Admin Dashboard',
+                'Sales Analytics',
+                'Image Uploads',
+                'RESTful APIs',
+              ].map((feature, index) => (
+                <li key={index} className="flex items-center gap-3">
+                  <span className="text-blue-600 dark:text-blue-400 font-bold">✓</span>
+                  {feature}
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+
+          {/* SubTrack Details */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.1 }}
+            className="mb-16 bg-white dark:bg-gray-800 rounded-xl p-8 border border-gray-200 dark:border-gray-700"
+          >
+            <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">SubTrack Features</h3>
+            <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-700 dark:text-gray-300">
+              {[
+                'Budget Tracking',
+                'MRR/ARR Analytics',
+                'Category Insights',
+                'Smart Payment Reminders',
+                'Supabase Authentication',
+                'Real-time Sync',
+                'Cross-platform Support',
+                'Financial Dashboard',
+              ].map((feature, index) => (
+                <li key={index} className="flex items-center gap-3">
+                  <span className="text-purple-600 dark:text-purple-400 font-bold">✓</span>
+                  {feature}
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+
+          {/* Remnantborn Details */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="bg-white dark:bg-gray-800 rounded-xl p-8 border border-gray-200 dark:border-gray-700"
+          >
+            <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Remnantborn Features</h3>
+            <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-700 dark:text-gray-300">
+              {[
+                'Interactive Zone Map',
+                'Squad Management',
+                'Daily Rewards System',
+                'Player Inventory',
+                'Real-time Messaging',
+                'Dark Themed UI',
+                'Character Management',
+                'Multiplayer Duels',
+              ].map((feature, index) => (
+                <li key={index} className="flex items-center gap-3">
+                  <span className="text-pink-600 dark:text-pink-400 font-bold">✓</span>
+                  {feature}
+                </li>
+              ))}
+            </ul>
           </motion.div>
         </div>
       </section>
@@ -184,7 +196,7 @@ export default function Projects() {
               Have a Project in Mind?
             </h2>
             <p className="text-xl text-blue-100 mb-8">
-              I'm always interested in collaborating on innovative projects.
+              I'm always interested in collaborating on innovative projects that make an impact.
             </p>
             <motion.a
               href="/contact"

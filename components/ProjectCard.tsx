@@ -11,6 +11,7 @@ interface ProjectCardProps {
   githubUrl: string;
   liveUrl: string;
   image?: string;
+  badge?: string;
 }
 
 export function ProjectCard({
@@ -20,6 +21,7 @@ export function ProjectCard({
   githubUrl,
   liveUrl,
   image,
+  badge,
 }: ProjectCardProps) {
   return (
     <motion.div
@@ -32,6 +34,13 @@ export function ProjectCard({
           {image || '💻'}
         </div>
         <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity duration-300" />
+        {badge && (
+          <div className="absolute top-4 right-4">
+            <span className="px-3 py-1 bg-purple-600 text-white text-xs font-bold rounded-full">
+              {badge}
+            </span>
+          </div>
+        )}
       </div>
 
       {/* Content */}

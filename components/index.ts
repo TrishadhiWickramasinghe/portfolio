@@ -5,3 +5,4 @@ export { ProjectCard } from './ProjectCard';
 export { SkillCard } from './SkillCard';
 export { ContactForm } from './ContactForm';
 export { ThemeToggle } from './ThemeToggle';
+export { SectionTitle } from './SectionTitle';

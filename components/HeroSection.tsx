@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { FaArrowRight, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { MdEmail } from 'react-icons/md';
 
 export function HeroSection() {
   const containerVariants = {
@@ -37,7 +38,7 @@ export function HeroSection() {
         <motion.div variants={itemVariants} className="mb-8">
           <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-blue-500 to-purple-600 p-1 shadow-xl">
             <div className="w-full h-full rounded-full bg-white dark:bg-gray-900 flex items-center justify-center text-6xl">
-              👨‍💻
+              �‍💻
             </div>
           </div>
         </motion.div>
@@ -54,9 +55,9 @@ export function HeroSection() {
           variants={itemVariants}
           className="text-5xl sm:text-6xl md:text-7xl font-bold mb-6 text-gray-900 dark:text-white"
         >
-          Hi, I'm{' '}
+          DONA TRISHADHI{' '}
           <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-            Trishadhi Wickramasinghe
+            GAYANI WICKRAMASINGHE
           </span>
         </motion.h1>
 
@@ -65,7 +66,7 @@ export function HeroSection() {
           variants={itemVariants}
           className="text-xl sm:text-2xl text-gray-600 dark:text-gray-400 mb-4 max-w-3xl mx-auto"
         >
-          Software Engineering Student & Full Stack Developer & Mobile Developer
+          Software Engineering Student | Mobile & Full-Stack Developer
         </motion.p>
 
         {/* Tagline */}
@@ -73,7 +74,7 @@ export function HeroSection() {
           variants={itemVariants}
           className="text-lg text-gray-500 dark:text-gray-500 mb-12 max-w-2xl mx-auto leading-relaxed"
         >
-          I create innovative digital experiences across web and mobile platforms. Specializing in full-stack development with a focus on performance, scalability, and user experience. Passionate about turning ideas into reality through clean code and creative problem-solving.
+          A passionate software engineering student focused on building scalable mobile and full-stack applications using modern technologies including React Native, Flutter, FastAPI, Node.js, and Supabase. Dedicated to creating innovative digital experiences with clean code and creative problem-solving.
         </motion.p>
 
         {/* CTA Buttons */}
@@ -105,8 +106,9 @@ export function HeroSection() {
         {/* Social Links */}
         <motion.div variants={itemVariants} className="flex justify-center gap-6">
           {[
-            { icon: FaGithub, href: 'https://github.com/TrishadhiWickramasinghe/', label: 'GitHub' },
-            { icon: FaLinkedin, href: 'https://www.linkedin.com/in/trishadhi/', label: 'LinkedIn' },
+            { icon: FaGithub, href: 'https://github.com', label: 'GitHub' },
+            { icon: FaLinkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
+            { icon: MdEmail, href: 'mailto:gayaniw880@gmail.com', label: 'Email' },
           ].map((social) => (
             <motion.a
               key={social.label}

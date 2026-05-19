@@ -53,6 +53,7 @@ export function Footer() {
               {[
                 { href: '/', label: 'Home' },
                 { href: '/about', label: 'About' },
+                { href: '/skills', label: 'Skills' },
                 { href: '/projects', label: 'Projects' },
                 { href: '/contact', label: 'Contact' },
               ].map((link) => (
@@ -94,7 +95,7 @@ export function Footer() {
         {/* Divider */}
         <div className="border-t border-gray-200 dark:border-gray-800 pt-8">
           <p className="text-center text-gray-600 dark:text-gray-400 text-sm">
-            © {currentYear} Trishadhi Wickramasinghe. All rights reserved. | Built with Next.js,
+            © {currentYear} Dona Trishadhi Gayani Wickramasinghe. All rights reserved. | Built with Next.js,
             React & Tailwind CSS
           </p>
         </div>

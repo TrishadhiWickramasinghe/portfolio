@@ -6,31 +6,33 @@ import { HeroSection, ProjectCard } from '@/components';
 export default function Home() {
   const featuredProjects = [
     {
-      title: 'E-commerce Platform',
+      title: 'BTY-HUB – E-Commerce Platform',
       description:
-        'Full-stack e-commerce application with payment integration, product management, and user authentication.',
-      technologies: ['Next.js', 'TypeScript', 'Stripe', 'PostgreSQL'],
+        'Developed a full-stack e-commerce platform with a React frontend and FastAPI backend. Implemented JWT authentication, product management, shopping cart, order management, wishlist, reviews, ratings, and an admin analytics dashboard.',
+      technologies: ['FastAPI', 'React JS', 'MongoDB', 'JWT', 'Pydantic'],
       githubUrl: 'https://github.com',
       liveUrl: 'https://example.com',
       image: '🛒',
     },
     {
-      title: 'Task Management App',
+      title: 'SubTrack – Subscription Management App',
       description:
-        'Collaborative task management tool with real-time updates, team collaboration, and productivity analytics.',
-      technologies: ['React', 'Firebase', 'Tailwind CSS', 'Redux'],
+        'Built a cross-platform mobile application for tracking subscriptions, budgeting, and financial analytics with smart reminders and real-time synchronization.',
+      technologies: ['React Native', 'Expo', 'TypeScript', 'Supabase'],
       githubUrl: 'https://github.com',
       liveUrl: 'https://example.com',
-      image: '✅',
+      image: '📱',
+      badge: 'Ongoing Project',
     },
     {
-      title: 'Chat Application',
+      title: 'Remnantborn – Realm Clash RPG Companion App',
       description:
-        'Real-time messaging platform with user profiles, group chats, and notification system.',
-      technologies: ['Node.js', 'Socket.io', 'MongoDB', 'React'],
+        'Contributing to a sci-fi RPG companion app with character management, squad systems, duels, inventory management, and real-time multiplayer features.',
+      technologies: ['Flutter', 'Dart', 'Supabase', 'Node.js', 'Socket.IO'],
       githubUrl: 'https://github.com',
       liveUrl: 'https://example.com',
-      image: '💬',
+      image: '🎮',
+      badge: 'Ongoing Project',
     },
   ];
 
@@ -50,7 +52,7 @@ export default function Home() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
-              Featured Projects
+              Featured <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Projects</span>
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
               Showcase of my recent work and technical expertise

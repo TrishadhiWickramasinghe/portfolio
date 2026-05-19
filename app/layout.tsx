@@ -15,9 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio | Software Engineer",
-  description: "Full Stack Developer - Building scalable web applications with modern technologies",
-  keywords: ["developer", "portfolio", "full stack", "next.js", "react"],
+  title: "Dona Trishadhi Gayani Wickramasinghe | Software Engineer",
+  description: "Software Engineering Student | Mobile & Full-Stack Developer. Specializing in React Native, Flutter, FastAPI, Node.js, and modern web applications.",
+  keywords: ["developer", "portfolio", "full stack", "mobile developer", "next.js", "react", "flutter", "react native"],
 };
 
 export default function RootLayout({

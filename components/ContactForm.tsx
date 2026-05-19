@@ -107,13 +107,13 @@ export function ContactForm() {
               {
                 icon: FaPhone,
                 label: 'Phone',
-                value: '0762502377',
-                href: 'tel:0762502377',
+                value: '+94 762502377',
+                href: 'tel:+94762502377',
               },
               {
                 icon: FaMapMarkerAlt,
                 label: 'Location',
-                value: 'Hettipola, North Western, Sri Lanka',
+                value: 'No 548/3, Pahala Koswatta, Halmillawewa',
                 href: '#',
               },
             ].map((item, index) => (
