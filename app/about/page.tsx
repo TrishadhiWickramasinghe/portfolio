@@ -54,22 +54,22 @@ export default function About() {
   ];
 
   const alResults = [
-    { subject: 'Combined Maths', grade: 'C', marks: '60/100' },
-    { subject: 'Physics', grade: 'S', marks: '55/100' },
-    { subject: 'Chemistry', grade: 'S', marks: '55/100' },
-    { subject: 'General English', grade: 'S', marks: '55/100' },
+    { subject: 'Combined Maths', grade: 'C' },
+    { subject: 'Physics', grade: 'S' },
+    { subject: 'Chemistry', grade: 'S' },
+    { subject: 'General English', grade: 'S' },
   ];
 
   const olResults = [
-    { subject: 'Mathematics', grade: 'A', marks: '86/100' },
-    { subject: 'Catholicism', grade: 'A', marks: '87/100' },
-    { subject: 'Citizenship', grade: 'A', marks: '88/100' },
-    { subject: 'Music', grade: 'A', marks: '85/100' },
-    { subject: 'English Language', grade: 'B', marks: '72/100' },
-    { subject: 'Sinhala Language', grade: 'B', marks: '74/100' },
-    { subject: 'History', grade: 'B', marks: '75/100' },
-    { subject: 'Information & Communication Technology', grade: 'B', marks: '71/100' },
-    { subject: 'Science', grade: 'C', marks: '65/100' },
+    { subject: 'Mathematics', grade: 'A' },
+    { subject: 'Catholicism', grade: 'A' },
+    { subject: 'Citizenship', grade: 'A' },
+    { subject: 'Music', grade: 'A' },
+    { subject: 'English Language', grade: 'B' },
+    { subject: 'Sinhala Language', grade: 'B' },
+    { subject: 'History', grade: 'B' },
+    { subject: 'Information & Communication Technology', grade: 'B' },
+    { subject: 'Science', grade: 'C' },
   ];
 
   const containerVariants = {
@@ -229,9 +229,6 @@ export default function About() {
                   <th className="px-6 py-4 text-center font-bold text-gray-900 dark:text-white">
                     Grade
                   </th>
-                  <th className="px-6 py-4 text-center font-bold text-gray-900 dark:text-white">
-                    Marks
-                  </th>
                 </tr>
               </thead>
               <tbody>
@@ -250,9 +247,6 @@ export default function About() {
                       <span className="px-4 py-2 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 rounded-lg font-bold">
                         {result.grade}
                       </span>
-                    </td>
-                    <td className="px-6 py-4 text-center text-gray-700 dark:text-gray-300 font-semibold">
-                      {result.marks}
                     </td>
                   </motion.tr>
                 ))}
@@ -281,9 +275,6 @@ export default function About() {
                   <th className="px-6 py-4 text-center font-bold text-gray-900 dark:text-white">
                     Grade
                   </th>
-                  <th className="px-6 py-4 text-center font-bold text-gray-900 dark:text-white">
-                    Marks
-                  </th>
                 </tr>
               </thead>
               <tbody>
@@ -302,9 +293,6 @@ export default function About() {
                       <span className="px-4 py-2 bg-purple-100 dark:bg-purple-900 text-purple-700 dark:text-purple-300 rounded-lg font-bold">
                         {result.grade}
                       </span>
-                    </td>
-                    <td className="px-6 py-4 text-center text-gray-700 dark:text-gray-300 font-semibold">
-                      {result.marks}
                     </td>
                   </motion.tr>
                 ))}
