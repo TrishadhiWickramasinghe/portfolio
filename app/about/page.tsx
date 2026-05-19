@@ -60,13 +60,15 @@ export default function About() {
   ];
 
   const olResults = [
-    { subject: 'Information & Communication Technology', grade: 'A', marks: '87/100' },
-    { subject: 'Mathematics', grade: 'B+', marks: '79/100' },
-    { subject: 'Science', grade: 'A', marks: '84/100' },
-    { subject: 'History', grade: 'A', marks: '86/100' },
-    { subject: 'Sinhala Language', grade: 'A', marks: '88/100' },
-    { subject: 'English Language', grade: 'B+', marks: '75/100' },
-    { subject: 'Buddhism', grade: 'A', marks: '90/100' },
+    { subject: 'Mathematics', grade: 'A', marks: '86/100' },
+    { subject: 'Catholicism', grade: 'A', marks: '87/100' },
+    { subject: 'Citizenship', grade: 'A', marks: '88/100' },
+    { subject: 'Music', grade: 'A', marks: '85/100' },
+    { subject: 'English Language', grade: 'B', marks: '72/100' },
+    { subject: 'Sinhala Language', grade: 'B', marks: '74/100' },
+    { subject: 'History', grade: 'B', marks: '75/100' },
+    { subject: 'Information & Communication Technology', grade: 'B', marks: '71/100' },
+    { subject: 'Science', grade: 'C', marks: '65/100' },
   ];
 
   const containerVariants = {
